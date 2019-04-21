@@ -1,7 +1,7 @@
 # AISD - Algorytmy i Struktury Danych
 
-##Lista 1
-####Zadanie 1
+## Lista 1
+#### Zadanie 1
 Zaimplementuj w czystym C listę jednokierunkową z następującymi operacjami:
 
 * *insert* – wstawiającą element do listy
@@ -13,8 +13,8 @@ Funkcje realizujące podane operacje nie mogą korzystać ze zmiennych globalnyc
 *wstaw w losowej kolejności elementy od 1 do 100 (100 elementów) na listę
 *dopóki lista nie będzie pusta: sprawdź czy elementy od 1 do 100 są na liście a następnie usuń element maksymalny. Rozpatrz oba warianty operacji sprawdzającej. Która z nich daje mniejszą średnią liczbę porównań. Licznik porównań można zrealizować jako zmienną globalną.
 
-##Lista 2
-####Zadanie 1
+## Lista 2
+#### Zadanie 1
 Celem zadania jest zaimplementowanie i przetestowanie następującychalgorytmów sortowania:
 
 * *SelectSort*
@@ -27,7 +27,7 @@ Program przyjmuje dwa parametry wejściowe --type select|insert|heap|quick – o
 * liczba n – liczba elementów do posortowania
 * ciąg elementów do posortowania (niech elementy tej listy zostaną nazwane kluczami)
 
-####Zadanie 2
+####Z adanie 2
 
 Uzupełnij program z Zadania 1 o możliwość wywołania go z parametrem uruchomienia --stat nazwa_pliku k, wtedy pomija on wczytywanie danych i dla każdego n ∈ {100, 200, 300, . . . , 10000} wykonuje po k niezależnych powtórzeń:
 
