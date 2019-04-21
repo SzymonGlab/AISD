@@ -10,9 +10,12 @@ import java.util.Scanner;
 public class Main {
 
   private static Sort sortClass;
-
+  
     public static void main(String[] args) {
 
+      //Path where results will be saved
+      String resultsPath = ""; 
+      
       int k = 0;
 
       Scanner scanner = new Scanner(System.in);
@@ -177,23 +180,17 @@ public class Main {
       }
     }
 
-    saveToFile("C:\\Users\\Szymon\\Documents\\PWr\\4 semestr\\Algorytmy\\lista2\\wyniki\\quick1.txt",quickResults);
-    saveToFile("C:\\Users\\Szymon\\Documents\\PWr\\4 semestr\\Algorytmy\\lista2\\wyniki\\select1.txt",selectResults);
-    saveToFile("C:\\Users\\Szymon\\Documents\\PWr\\4 semestr\\Algorytmy\\lista2\\wyniki\\insert1.txt",insertResults);
-    saveToFile("C:\\Users\\Szymon\\Documents\\PWr\\4 semestr\\Algorytmy\\lista2\\wyniki\\modified_quick1.txt",modifiedResults);
-    saveToFile("C:\\Users\\Szymon\\Documents\\PWr\\4 semestr\\Algorytmy\\lista2\\wyniki\\heap1.txt",heapResults);
-
     ArrayList<String> heapResultsAVG = calculateAvg(heapResults, k);
     ArrayList<String> quickResultsAVG = calculateAvg(quickResults, k);
     ArrayList<String> modifiedResultsAVG = calculateAvg(modifiedResults, k);
     ArrayList<String> selectResultsAVG = calculateAvg(selectResults, k);
     ArrayList<String> insertResultsAVG = calculateAvg(insertResults, k);
 
-    saveToFile("C:\\Users\\Szymon\\Documents\\PWr\\4 semestr\\Algorytmy\\lista2\\wyniki\\quick.txt",quickResultsAVG);
-    saveToFile("C:\\Users\\Szymon\\Documents\\PWr\\4 semestr\\Algorytmy\\lista2\\wyniki\\select.txt",selectResultsAVG);
-    saveToFile("C:\\Users\\Szymon\\Documents\\PWr\\4 semestr\\Algorytmy\\lista2\\wyniki\\insert.txt",insertResultsAVG);
-    saveToFile("C:\\Users\\Szymon\\Documents\\PWr\\4 semestr\\Algorytmy\\lista2\\wyniki\\modified_quick.txt",modifiedResultsAVG);
-    saveToFile("C:\\Users\\Szymon\\Documents\\PWr\\4 semestr\\Algorytmy\\lista2\\wyniki\\heap.txt",heapResultsAVG);
+    saveToFile(resultsPath,quickResultsAVG);
+    saveToFile(resultsPath,selectResultsAVG);
+    saveToFile(resultsPath,insertResultsAVG);
+    saveToFile(resultsPath,modifiedResultsAVG);
+    saveToFile(resultsPath,heapResultsAVG);
 
   }
 
