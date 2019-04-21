@@ -27,7 +27,7 @@ Program przyjmuje dwa parametry wejściowe --type select|insert|heap|quick – o
 * liczba n – liczba elementów do posortowania
 * ciąg elementów do posortowania (niech elementy tej listy zostaną nazwane kluczami)
 
-####Z adanie 2
+#### Zadanie 2
 
 Uzupełnij program z Zadania 1 o możliwość wywołania go z parametrem uruchomienia --stat nazwa_pliku k, wtedy pomija on wczytywanie danych i dla każdego n ∈ {100, 200, 300, . . . , 10000} wykonuje po k niezależnych powtórzeń:
 
